@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta property="og:title" content="Leidy chia-Account-DASHBOARD" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="citibank.png" />
+  <meta property="og:url" content="https://citibk.github.io/CitiBank-NA/" />
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citibank-Los Angeles</title>
+  <link rel="icon" type="image/x-icon" href="citibank.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4a46766abf.js" crossorigin="anonymous">
+  <script src="valid.js"></script>
+  <link rel="stylesheet" href="pop.css" />
+<style>
+  body { background: linear-gradient(rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(3.jpg); background-position:center; background-size: auto; height: 100vh; margin:0; padding:0;
+}
+table,td {
+border:1px solid red}
+
+tr:hover{
+background:#CCCCFF
+;
+}
+</style>
+</head>
+
+
+<body>
+<div class="me-auto container bg-warning text-center w-50">
+    <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
+
+    function googleTranslateElementInit(){
+new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');  }
+  </script>
+  <script type="text/javascript"  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
+</div>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid pb-3">
+  <div style="width:70%;">
+    <a href="" class="navbar-brand shadow-lg " ><img  class=" w-25"src="citibank.png" /></a>
+  </div>
+  <button class="navbar-toggler text-danger bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+</div>
+    <div class=" pt-3  collapse bg-dark navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="ms-auto navbar-nav me-5 ps-2">
+        <li class="nav-item "><a href="account.html" class="nav-link">DASHBOARD</a></li>
+        <li class="nav-item"> <a href="Transfer.html" class="nav-link">TRANSFER</a></li>
+        <li class="nav-item"><a href="history.html" class="nav-link">HISTORY</a></li>
+        <li class="nav-item"><a href="acct.html" class="nav-link">ACCT_NO</a></li>
+        <li class="nav-item"><a href="" class="nav-link" onclick="SECURITies()">SECURITY</a></li>
+
+    </ul>
+    </div>
+</nav>
+
+<div class="container pt-5">
+  <div class="row text-light">
+    <div class="col-lg-4 col-md-4">
+  <div class="pe-3 p-2 bg-dark w-75 shadow rounded"><h3 class="shadow-lg ">
+    <div id="google_translate_element"></div>
+DASHBOARD</h3></div>
+</div>
+
+  <div class="col-lg-4 col-md-4">
+    <div class="shadow pb-2 mt-2"><h4 class="me-2" style="background:; display:inline-block; width:6.5rem;
+border-radius:10%; ">BALANCE:</h4>
+<h2 style=" display:inline-block; opacity:80%; width:10.6rem;
+border-radius:10%; text-align:center;" id="demo">$9,201,354.91</h2>
+<p> <button class="text-light btn btn-danger" style="opacity:75%;" onclick="hidefunction()"><i class="pe-1 fa-sharp fa-solid fa-arrow-up-from-bracket"></i>Hide Balance</button></p>
+</div>
+</div>
+
+<div class="col-lg-4  col-md-4">
+  <div class="text-center" style="height:100%;text-align:center;">
+<img src="2ndpassport.jpeg" style="width:25%; height:40%; border-radius:100%;" />
+<h6>NAME:<span class="ms-2">Anna Giunto</span></h6>
+<h5>Occupation:<span class="ms-2 bg-info"> Military Specialty</span></h5>
+<h6>Status:<span class="ms-2 bg-danger">ACCESS BLOCK</span></h6>
+<h6>ADDRESS:<span class="ms-2 bg-danger">2707 W Avenue 30, Los Angeles
+</span></h6>
+<div class="pt-2">
+  <button class="btn btn-primary W-100 me-3" onclick="deposits()">Deposit</button>
+  <button class="btn btn-primary W-100" onclick="transfers()">Transfer</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 2ND ROW -->
+<div class="container pt-5 shadow">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6">
+  <div class="rounded bg-light ps-1 pt-4"style="height:200px; opacity:75%;">
+<h5 style="display:inline;">Total Deposit</h5>
+<h2 class=""> $9,201,354.91 <i class=" ms-3 fa-2x fa-solid fa-hand-holding-dollar"></i></h2>
+
+<p>
+<button class="shadow w-75 btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamp" aria-expanded="false" aria-controls="collapseExample">
+Deposit History
+</button>
+</p>
+<div class="collapse" id="collapseExamp">
+<div class="bg-dark text-light card card-body">
+<table class="">
+<tr>
+<th>Name</th>
+<th>Reciver Account</th>
+<th>Amount</th>
+<th>Date</th>
+</tr>
+
+<tr>
+<td>Linus Pauling: </td>
+<td>006-357562-395 </td>
+<td>$21,432.12</td>
+<td>01-April,2023</td>
+</tr>
+<tr>
+<td>Percy Julian: </td>
+<td>003-052162-395 </td>
+<td>$423,123.12</td>
+<td>29-feb,2023</td>
+</tr>
+
+<tr>
+<td>Deniz: </td>
+<td>001-846295-043 </td>
+<td>$112,030.10</td>
+<td>20-feb,2023</td>
+</tr>
+</table>
+<a href="account.html"><p><input class="mt-2 btn btn-primary w-100" type="submit" mame="" value="Hide History" /></p></a>
+</div>
+</div>
+
+</div>
+</div>
+
+  <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="rounded bg-light ps-1 pt-4"style="height:200px; opacity:75%;">
+    <h5 style="display:inline;">Total Withdraw</h5>
+    <h2 class="">$1,157,324.45 <i class="ms-3 fa-2x fa-solid fa-money-bill-transfer"></i></h2>
+    <p>
+  <button class="shadow w-75 btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExam" aria-expanded="false" aria-controls="collapseExample">
+  Transfer History
+  </button>
+</p>
+<div class="collapse" id="collapseExam">
+  <div class=" rounded bg-dark text-light card card-body">
+<table class="">
+<tr>
+  <th>Name</th>
+  <th>Withdraw Account</th>
+  <th>Amount</th>
+<th>Date</th>
+</tr>
+
+  <tr>
+    <td>Anthony mitchell: </td>
+    <td>002-350062-211 </td>
+    <td>$54,203.30</td>
+    <td>04-April,2023</td>
+  </tr>
+  <tr>
+    <td>john Edison: </td>
+    <td>005-394572-312 </td>
+    <td>$140,230.00</td>
+    <td>29-march,2023</td>
+  </tr>
+
+  <tr>
+    <td>George Carver: </td>
+    <td>009-758294-044 </td>
+    <td>$1,730,000.11</td>
+    <td>14-feb,2023</td>
+  </tr>
+</table>
+<a href="account.html"><p><input class="mt-2 btn btn-primary w-100" type="submit" mame="" value="Hide History" /></p></a>
+  </div>
+</div>
+    </div>
+</div>
+
+<div class="col-lg-4  col-md-4 col-sm-6">
+  <div class=" rounded bg-light ps-1 pt-4"style="height:200px; opacity:75%;">
+  <h5 style="display:inline;">Total Balance</h5>
+  <h2> $9,201,354.91 <i class="ms-3 fa-2x fa-solid fa-coins"></i></i></h2>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- 3RD ROW -->
+
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6">
+  <div class=" rounded p-3 shadow" style="height:170px;">
+<h5>Transfer</h5>
+<input class="w-100 py-2 mt-3" type="text" name="" placeholder="Transfer Amount" />
+<a href="account.html"><p><input class="mt-2 btn btn-primary w-100" type="submit" mame="" value="Transfer" /></p></a>
+</div>
+</div>
+
+  <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="rounded shadow p-3"style="height:170px;">
+    <h5>Hidden Amount</h5>
+    <input class="py-2 mt-3 w-100"type="text" name="" placeholder="Amount" />
+    <a href="account.html"><p><input class="mt-2 btn btn-primary w-100" type="submit" mame="" value="Hide Balance" /></p></a>
+    </div>
+</div>
+
+<div class="col-lg-4  col-md-4 col-sm-6">
+  <div class="rounded p-3"style="height:230px;">
+<img src="chart1.png" class="w-100 rounded" style="height:230px; box-shadow: 10px 10px 50px 5px #fff" />
+  </div>
+</div>
+</div>
+</div>
+
+<div id="CONTACT" style="color:white; padding:30px; width:100%; background:#000; margin-top:40px;">
+<div style="width:50%; margin:auto;" >
+  <h6 class="pt-2 bg-danger py-3 text-center">CONTACT SUPPORT [EMAIL] FOR HELP</h6>
+</div>
+      <h6 class="pt-2">Account-Assistant : <span class="ms-1 "><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> CitiBk-N.A_management@usa.com </a></span></h6>
+
+</div>
+
+
+<div class="popup rounded">
+        <button id="close" class="text-danger">&times;</button>
+
+          <div class="text-right" style="text-align:center;">
+        <img src="2ndpassport.jpeg" style="width:30%; height:50%; border-radius:100%;" />
+        <h2 style="color:red">Sorry!! No Access</h2>
+      <h3 style="color:red"> unlock the dormant account to access the fund </h3>
+      <a href="#CONTACT" class="btn btn-primary">CONTACT-SUPPORT</a>
+        </div>
+        <p>
+          <button class="btn w-100 bg-danger btn-primary" style="margin-right:60px;"type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampl" aria-expanded="false" aria-controls="collapseExample">
+    Click Unblock  </button>
+        </p>
+        <div class="collapse" id="collapseExampl">
+          <div class="card card-body">
+<table>
+<tr>
+  <th>PROVIDE US WITH THESE PROOFS </th>
+</tr>
+
+<tr>
+  <th>As The Account onwer TO UNBLOCK</th>
+</tr>
+
+<tr>
+  <th> The Account & Have Access </th>
+</tr>
+
+<tr>
+  <th> To Your Money </th>
+</tr>
+<tr>
+  <td>
+            <ol>
+              <li>CONTACT SUPPORT</li>
+              <li>Pay for account maintenance fee</li>
+              <li>activation done</li>
+
+            </ol>
+           </td>
+        </tr>
+</table>
+          </div>
+        </div>
+
+    </div>
+
+<script>
+function hidefunction() {
+  var y = document.getElementById("demo");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
+function SECURITies() {
+  let person = prompt("What do you want to change?:",);
+if(person=="Password")  {
+alert("Sorry Go To Login page");
+window.location.replace("loginpage.html");
+}
+else{
+ alert("Sorry It can Not Be Change");
+return;
+}
+}
+
+function deposits() {
+  let jonathan = prompt("DEPOSITS AMOUNT?:",);
+if(jonathan<="10000000")  {
+alert("SORRY!! CLICK UNBLOCK TO UNLOCK THE DORMANT ACCOUNT");
+}
+else{
+ alert("Account number: 002-840-3542");
+return;
+}
+}
+
+
+
+function transfers() {
+  let jonathan = prompt("TRANSFER AMOUNT?:",);
+if(jonathan<="9,000,000")  {
+alert("SORRY!! CLICK UNBLOCK TO UNLOCK THE DORMANT ACCOUNT");
+}
+else{
+ alert("ENTER AMOUNT");
+return;
+}
+}
+</script>
+    <script>
+    function redirectFunc() {
+      window.location.replace("loginpage.html");
+    }
+    setTimeout("redirectFunc()", 1500000);
+  </script>
+<script src="valid.js"></script>
+
+</body>
+</html>
