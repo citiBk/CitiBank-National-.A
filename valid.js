@@ -12,9 +12,9 @@ function validate(){
 var password = document.getElementById("pass").value;
 var name = document.getElementById("name").value;
 var length = document.getElementById("length").value;
-if(password== "Anna212" && name=="Giunto" || length >=8) {
+if(password== "Leidy212" && name=="chia" || length >=9) {
 alert("Login Successful");
-alert("welcome Anna Giunto");
+alert("welcome Leidy chia");
 window.location.replace("account.html");
 }
 else{
