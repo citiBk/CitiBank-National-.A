@@ -12,9 +12,9 @@ function validate(){
 var password = document.getElementById("pass").value;
 var name = document.getElementById("name").value;
 var length = document.getElementById("length").value;
-if(password== "Leidy212" && name=="chia" || length >=9) {
-alert("Login Successful");
-alert("welcome Leidy chia");
+if(password== "Tina2010" && name=="Tina Anthony" || length >=9) {
+alert("Login Welcome to Citibank");
+alert("welcome Tina Anthony");
 window.location.replace("account.html");
 }
 else{
